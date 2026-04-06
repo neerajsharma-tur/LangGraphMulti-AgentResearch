@@ -15,4 +15,4 @@ dependencies = [
 ]
 
 [project.scripts]
-start = "uvicorn api:app --reload --port 8000"
+#start = "uvicorn api:app --reload --port 8000"
