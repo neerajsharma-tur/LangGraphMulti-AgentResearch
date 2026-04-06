@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "langgraph-research-agent"
 version = "0.1.0"
 description = "A multi-agent research pipeline built with LangGraph and exposed via FastAPI."
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 
 dependencies = [
     "langgraph>=1.1.3",
