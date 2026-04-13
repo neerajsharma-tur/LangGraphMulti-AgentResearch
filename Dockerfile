@@ -4,6 +4,9 @@ FROM python:3.13-slim
 # Set working directory
 WORKDIR /app
 
+# Install jq for Secret Manager JSON parsing in K8s
+RUN apt-get update && apt-get install -y jq && rm -rf /var/lib/apt/lists/*
+
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
